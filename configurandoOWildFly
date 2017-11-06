@@ -1,0 +1,21 @@
+
+
+
+Configurar o wildFly .
+
+Entre em na pasta principal /WILDFLY
+Depois entre na pasta /bin
+Em seguida abra o arquivo standalone.bat.
+Ira executar na CMD , quando a última frase conter demand ou passive ele já estará pronto.
+
+Escreva na aba de navegação : loclhost:8080
+Irá abrir o wildFly
+
+Obs:O Wildfly pode ser utilizado em até 10 diretórios diferentes
+(em cada pasta que é descompactada).
+
+Caso for a primeira vez é necessário criar um usuario.
+Adicione o usuário no caminho add-user.bat
+Como exemplo:
+ usuario : admin
+ senha : admin*123
