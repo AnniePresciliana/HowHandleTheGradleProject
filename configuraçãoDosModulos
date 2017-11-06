@@ -1,0 +1,30 @@
+A conexão do banco é feita pelos modulos
+
+Primeiro é necessário ir até :
+ wildfly/modules/system/layers/base/org
+
+Ao entrar na pasta ORG
+crie uma pasta de nome: postgresql
+
+Dentro da pasta POSTGREESQL crie uma pasta com o nome: main
+
+Dentro da pasta MAIN . 
+crie um arquivo de nome: module.txt
+depois ainda dentro da pasta MAIN
+crie um arquivo postgreesql-42.14.jar (esse nome é o arquivo do postgree instalado na maquina)
+
+
+dentro do module.txt é inserido o seguinte código:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:domain:datasources:2.0" name="org.postgresql">
+  <resources>
+    <resource-root path="postgresql-42.1.4.jar"/>
+  </resources>
+  <dependencies>
+     <module name="javax.api"/>
+     <module name="javax.transaction.api"/>
+   </dependencies>
+</module> 
+
+OBS: Na linha 20 o name = "org.postgreesql" deve conter o mesmo nome da pasta crianda na pasta ORG anteriormente.
