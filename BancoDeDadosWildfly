@@ -1,0 +1,16 @@
+A configuração do Banco de dados no wild fly é a seguinte :
+
+Clique na aba CONFIGURATION
+Depois entre em SUBSYSTEM
+Selecione DATASOURCES 
+Comumente é selecionado NON-XA
+Clique em ADD 
+Selecione o POSTGRESQL 
+
+
+
+
+
+
+
+gradle clean bild 
